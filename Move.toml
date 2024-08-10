@@ -1,7 +1,7 @@
 [package]
 name = "birdnft"
 edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
-published-at = "0xc69d42af3b2f487580255e5911379a57e6eb248d17a9c9037ee7528be0fb472b"
+published-at = "0x33dcf5ddc99d431e6e74087d1c180e1b9b652b6249910e98cd036ec1c89c27ea"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }

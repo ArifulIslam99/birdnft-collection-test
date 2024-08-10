@@ -26,9 +26,9 @@ fun init(otw: BIRDNFT, ctx: &mut TxContext) {
         ];
 
         let values = vector[
-            utf8(b"{collection} #{number} {name}"),
-            utf8(b"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTthlzS2gC2JL_LjqtShVQ3icv73-EAqXVHXw&s"),
-            utf8(b"Collection of Black Birds!"),
+            utf8(b"{name}"),
+            utf8(b"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-p8dBZvujdcP3R_snd8LH5z9nmYybs12zA&s"),
+            utf8(b"Collection of Red Birds!"),
         ];
 
         let mut display = display::new_with_fields<NFT>(
@@ -51,7 +51,7 @@ public entry fun mint_nft(name: String, num_count: &mut NumCount, ctx: &mut TxCo
     let new_bird_nft = NFT {
         id: object::new(ctx),
         name,
-        collection: utf8(b"BlackBirds"),
+        collection: utf8(b"RedBirds"),
         number: *current_number
     };
     transfer::public_transfer(new_bird_nft, tx_context::sender(ctx));
